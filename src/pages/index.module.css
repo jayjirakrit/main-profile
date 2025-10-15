@@ -1,0 +1,59 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.homeTitle {
+  margin-top: 8%;
+  font-weight: 700;
+  font-size: xxx-large;
+}
+
+.homeInfo {
+  font-weight: 400;
+  font-size: x-large;
+  margin-bottom: 5%;
+}
+
+.homeImgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.homeImg {
+  border-radius: 100%;
+  margin-bottom: 5%;
+  height: 200px;
+  width: 200px;
+}
+
+.deviceImgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto; /* Pushes to bottom */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.deviceImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.herobackground {
+  /* background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 50%, #bfdbfe 100%); */
+  min-height: 100vh;
+  background-color: #00a4ff;
+  padding: 4rem 2rem;
+  color: #1e3a8a; /* Dark blue text for contrast */
+  position: relative;
+  overflow: hidden;
+}

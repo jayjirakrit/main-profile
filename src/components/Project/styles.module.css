@@ -1,0 +1,44 @@
+.project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.projectContainer {
+  padding: 3rem 0;
+  margin: 0 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.projectCardContainer {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.projectContent {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+
+  /* Flexbox for 4 equal columns */
+  flex: 1 1 calc(25% - 2rem);
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.projectContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
