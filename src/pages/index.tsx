@@ -22,7 +22,7 @@ export default function Home(): ReactNode {
         {/* Home */}
         <div className={styles.home}>
           <h1 className={styles.homeTitle}>
-            Developer, DevOps & Solution Architect
+            Developer, IT Consultant & Solution Architect
           </h1>
           <h3 className={styles.homeInfo}>
             I design and build IT solution, and I love what I do.

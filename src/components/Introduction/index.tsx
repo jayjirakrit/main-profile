@@ -25,10 +25,10 @@ const IntroductionSection = (): ReactNode => {
               <h2>Education</h2>
               <h4>The University of Hong Kong</h4>
               <h5>Master of Computer Science</h5>
-              <p>Graduated in 2025 | GPA: 3.71 (Distinction)</p>
+              <p>Graduated in 2025 (Distinction)</p>
               <h4>Chulalongkorn University</h4>
               <h5>Bachelor of Engineering (Nano Engineering)</h5>
-              <p>Graduated in 2019 | GPA: 3.11</p>
+              <p>Graduated in 2019</p>
             </div>
 
             <div className="languageContainer">

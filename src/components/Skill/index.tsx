@@ -3,6 +3,65 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
+interface SkillInfo {
+  title: string;
+  value: string;
+}
+
+interface Skill {
+  topic: string;
+  img: string;
+  skillInfo: SkillInfo[];
+}
+
+const skillList: Skill[] = [
+  {
+    topic: "Development",
+    img: "/code.png",
+    skillInfo: [
+      {
+        title: "Programming Language",
+        value:
+          "Java, C#, TypeScript, JavaScript, Python, SQL, HTML, CSS, Node.js",
+      },
+      {
+        title: "Framework & Tool",
+        value:
+          "Spring Boot, Spring Cloud, React, Angular, ASP.NET Core, Next JS, FastAPI, SQL Server, PostgreSQL",
+      },
+    ],
+  },
+  {
+    topic: "DevOps",
+    img: "/continuous.png",
+    skillInfo: [
+      {
+        title: "Programming Language",
+        value: "Bash, Powershell, Python",
+      },
+      {
+        title: "Tool & Technologies",
+        value: "Git, Jenkins, Docker, Google Cloud, Kubernetes, OpenShift",
+      },
+    ],
+  },
+  {
+    topic: "Design & Architect",
+    img: "/blueprint.png",
+    skillInfo: [
+      {
+        title: "Design",
+        value: "Sequence Diagram, ER Diagram, High Level Design",
+      },
+      {
+        title: "Architecture Pattern",
+        value:
+          "Reactive Programming, Domain Driven Design, Microservice, Event-Driven",
+      },
+    ],
+  },
+];
+
 const SkillSection = (): ReactNode => {
   return (
     <section>
@@ -12,45 +71,24 @@ const SkillSection = (): ReactNode => {
             <h1>My Skills</h1>
           </div>
           <ul>
-            <li className={styles.skillColumn}>
-              <div className={styles.skillIcon}>
-                <img src="/code.png" alt="" />
-              </div>
-              <h4 className="">Developer</h4>
-              <h6 className="">Programming Language</h6>
-              <p>
-                Java, C#, TypeScript, JavaScript, Python, SQL, HTML, CSS,
-                Node.js
-              </p>
-              <h6 className="">Framework & Tool</h6>
-              <p>
-                Spring Boot, Spring Cloud, React, Angular, ASP.NET Core, Next
-                JS, SQL Server, PostgreSQL
-              </p>
-            </li>
-            <li className={styles.skillColumn}>
-              <div className={styles.skillIcon}>
-                <img src="/continuous.png" alt="" />
-              </div>
-              <h4 className="">DevOps</h4>
-              <h6 className="">Programming Language</h6>
-              <p>Bash, Powershell, Python</p>
-              <h6 className="">Tool & Technologies</h6>
-              <p>Kubernetes, OpenShift, Docker, Google Cloud, Jenkins, Git</p>
-            </li>
-            <li className={styles.skillColumn}>
-              <div className={styles.skillIcon}>
-                <img src="/blueprint.png" alt="" />
-              </div>
-              <h4 className="">Solution Architect</h4>
-              <h6 className="">Design</h6>
-              <p>Sequence Diagram, ER Diagram, High Level Design</p>
-              <h6 className="">Architecture Pattern</h6>
-              <p>
-                Reactive Programming, Domain Driven Design, Microservice,
-                Event-Driven
-              </p>
-            </li>
+            {skillList.map((skill) => {
+              return (
+                <li className={styles.skillColumn}>
+                  <div className={styles.skillIcon}>
+                    <img src={skill.img} />
+                  </div>
+                  <h3 className="">{skill.topic}</h3>
+                  {skill.skillInfo.map((info) => {
+                    return (
+                      <>
+                        <h6 className="">{info.title}</h6>
+                        <p>{info.value}</p>
+                      </>
+                    );
+                  })}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

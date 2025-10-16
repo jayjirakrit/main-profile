@@ -9,7 +9,7 @@ const config: Config = {
   tagline: "Jay is cool",
   favicon: "jay-avatar.jpeg",
   stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap",
   ],
   plugins: ["./src/plugins/tailwind-config.ts"],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

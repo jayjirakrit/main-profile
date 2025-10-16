@@ -21,3 +21,8 @@
   justify-content: start;
   text-align: left;
 }
+
+.date {
+  font-size: small;
+  font-weight: 400;
+}
