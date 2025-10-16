@@ -23,8 +23,8 @@ const jobExperiences: JobExperience[] = [
       // "Part of a team to implement digital identity verification platform using web, mobile, and blockchain."
       "Led 6 developers in building 100+ event-driven microservices for core banking integration, handling payment processing, audit controls through reconciliation, and financial reporting, AMLO, fees, FX, GL, data warehouse operation.",
       "Implemented cloud-native systems incorporating multi-threading for scalability using OpenShift, Docker, Istio (service mesh), capable of handling 500,000+ daily transactions.",
-      "Developed a new platform using React (TypeScript), Tailwind CSS, and ASP.NET Core (C#). This involved integrating with 13 internal services and migrating data and features from 4 core existing systems.",
-      "Builed digital identity verification platform for financial transaction approvals using web, mobile, and blockchain technology within a team of 40 members across various regions.",
+      "Designed and Developed a new platform using React (TypeScript), Tailwind CSS, and ASP.NET Core (C#). This involved integrating with 13 internal services and migrating data and features from 4 legacy systems.",
+      "Built digital identity verification platform for financial transaction approvals using web, mobile, and blockchain technology within a team of 40 members across various regions.",
     ],
     start: "2021",
     end: "2024",
